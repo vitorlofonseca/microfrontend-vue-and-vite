@@ -1,23 +1,12 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
+import { RouterView } from "vue-router";
+import Topbar from "./components/Topbar/Topbar.vue";
 </script>
 
 <template>
   <header>
-    <img
-      alt="Pigeon logo"
-      class="logo"
-      src="@/assets/pigeon.png"
-      width="125"
-      height="125"
-    />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-      </nav>
+      <Topbar />
     </div>
   </header>
 
