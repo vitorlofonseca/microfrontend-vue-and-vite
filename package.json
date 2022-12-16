@@ -1,0 +1,41 @@
+{
+  "name": "microfrontend-and-third-components-vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-s build serve",
+    "build": "pnpm --parallel --filter=\"!./pigeon\" build",
+    "serve": "run-p serve-remotes serve-host",
+    "serve-remotes": "pnpm --parallel --filter=\"!./pigeon\" preview",
+    "serve-host": "pnpm --parallel --filter=\"./pigeon\" dev",
+    "stop": "kill-port --port 5000,5001,5002,5003"
+  },
+  "private": true,
+  "workspaces": [
+    "pigeon",
+    "pigeon-shipments",
+    "pigeon-tracker"
+  ],
+  "devDependencies": {
+    "@originjs/vite-plugin-federation": "1.1.12",
+    "kill-port": "^2.0.1",
+    "npm-run-all": "^4.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitorlofonseca/microfrontend-and-third-components-vue.git"
+  },
+  "keywords": [
+    "micro-frontend",
+    "vue",
+    "vite",
+    "vite-plugin-federation"
+  ],
+  "author": "Vitor Fonseca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitorlofonseca/microfrontend-and-third-components-vue/issues"
+  },
+  "homepage": "https://github.com/vitorlofonseca/microfrontend-and-third-components-vue#readme"
+}
