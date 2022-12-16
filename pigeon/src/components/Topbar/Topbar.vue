@@ -15,7 +15,7 @@
     <div class="links">
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/tracker">Tracker</RouterLink>
-      <RouterLink to="/">Shipments</RouterLink>
+      <RouterLink to="/shipments">Shipments</RouterLink>
     </div>
   </nav>
 </template>

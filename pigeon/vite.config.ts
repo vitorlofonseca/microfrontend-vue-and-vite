@@ -14,6 +14,7 @@ export default defineConfig({
       name: "pigeon-app",
       remotes: {
         pigeon_tracker: "http://localhost:5005/assets/pigeonTracker.js",
+        pigeon_shipments: "http://localhost:5006/assets/pigeonShipments.js",
       },
       shared: ["vue"],
     }),

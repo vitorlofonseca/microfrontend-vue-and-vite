@@ -12,7 +12,12 @@ const router = createRouter({
     {
       path: "/tracker",
       name: "tracker",
-      component: () => import("pigeon_tracker/PigeonTracker"),
+      component: () => import("pigeon_tracker/App"),
+    },
+    {
+      path: "/shipments",
+      name: "shipments",
+      component: () => import("pigeon_shipments/App"),
     },
   ],
 });
