@@ -24,7 +24,9 @@ window.addEventListener("resize", checkIfResolutionIsLow);
       </div>
     </header>
 
-    <RouterView />
+    <div class="container">
+      <RouterView />
+    </div>
   </div>
 </template>
 
@@ -34,5 +36,9 @@ window.addEventListener("resize", checkIfResolutionIsLow);
   align-items: center;
   text-align: center;
   height: 100vh;
+}
+
+.container {
+  margin: 2rem;
 }
 </style>

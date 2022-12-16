@@ -34,7 +34,7 @@
 
 <style scoped lang="scss">
 .container {
-  margin-top: 5rem;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
