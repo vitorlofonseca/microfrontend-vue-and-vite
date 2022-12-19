@@ -1,10 +1,5 @@
-import { createApp } from "vue";
-import App from "./App.vue";
-import ElementPlus from "element-plus";
-import "element-plus/dist/index.css";
+import Button from "@/components/Button/Button.ce.vue";
+import { defineCustomElement } from "@vue/runtime-dom";
 
-const app = createApp(App);
-
-app.use(ElementPlus);
-
-app.mount("#app");
+const pButton = defineCustomElement(Button);
+window.customElements.define(`p-button`, pButton);
