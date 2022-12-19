@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "element-plus": "^2.2.27",
-    "vue": "^3.2.45"
+    "vue": "^3.2.45",
+    "vue3-webcomponent-wrapper": "^0.1.4"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",

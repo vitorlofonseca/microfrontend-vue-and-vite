@@ -2922,6 +2922,11 @@ vue-tsc@^1.0.12:
     "@volar/vue-language-core" "1.0.13"
     "@volar/vue-typescript" "1.0.13"
 
+vue3-webcomponent-wrapper@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/vue3-webcomponent-wrapper/-/vue3-webcomponent-wrapper-0.1.4.tgz#d49ddc0b51c59221a3ca0cc497bda0b708205b8b"
+  integrity sha512-beDHVcVzDjXOy4zZwrXtMUIqpLlldwJUDfvOReG3KuppApsadtFZhQPMSNlQbts3wZp/Hju/XpPmBx3THAorCg==
+
 vue@^3.2.45:
   version "3.2.45"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.2.45.tgz#94a116784447eb7dbd892167784619fef379b3c8"

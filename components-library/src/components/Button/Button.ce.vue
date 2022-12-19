@@ -1,10 +1,10 @@
 <template>
-  <button variant="flat" color="secondary" @click="onClickButton">
-    <slot />
-  </button>
+  <el-button type="primary" @click="onClickButton"><slot /></el-button>
 </template>
 
 <script lang="ts" setup>
+import { ElButton } from "element-plus";
+
 const onClickButton = () => console.log("Button was clicked");
 </script>
 
