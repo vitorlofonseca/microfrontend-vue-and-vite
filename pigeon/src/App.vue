@@ -3,6 +3,9 @@ import { onMounted, ref } from "vue";
 import { RouterView } from "vue-router";
 import Topbar from "./components/Topbar/Topbar.vue";
 
+import { Button } from "pigeon-components-library";
+import "pigeon-components-library/dist/style.css";
+
 const resolutionIsTooLow = ref(false);
 
 const checkIfResolutionIsLow = () =>
@@ -27,6 +30,8 @@ window.addEventListener("resize", checkIfResolutionIsLow);
     <div class="container">
       <RouterView />
     </div>
+
+    <Button>Click here</Button>
   </div>
 </template>
 

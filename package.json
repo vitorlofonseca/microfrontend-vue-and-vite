@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "run-s build preview",
-    "build": "pnpm --parallel --filter=\"!./pigeon\" build",
+    "build": "pnpm --parallel --filter=\"!./pigeon\" --filter=\"!./components-library\" build",
     "preview": "run-p serve-remotes serve-host",
-    "serve-remotes": "pnpm --parallel --filter=\"!./pigeon\" preview",
+    "serve-remotes": "pnpm --parallel --filter=\"!./pigeon\" --filter=\"!./components-library\" preview",
     "serve-host": "pnpm --parallel --filter=\"./pigeon\" dev",
     "stop": "kill-port --port 5000,5001,5002,5003"
   },
