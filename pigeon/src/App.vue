@@ -31,7 +31,7 @@ window.addEventListener("resize", checkIfResolutionIsLow);
       <RouterView />
     </div>
 
-    <Button>Click here</Button>
+    <Button type="success">Click here</Button>
   </div>
 </template>
 

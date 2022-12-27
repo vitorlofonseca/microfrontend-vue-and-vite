@@ -1,11 +1,29 @@
 <script setup lang="ts">
 import { ElButton } from "element-plus";
+import { EpPropMergeType } from "element-plus/es/utils";
+
+type Props = {
+  type: EpPropMergeType<
+    StringConstructor,
+    | ""
+    | "default"
+    | "primary"
+    | "success"
+    | "warning"
+    | "info"
+    | "danger"
+    | "text",
+    unknown
+  >;
+};
 
 const onBtnClick = () => console.log("Button was clicked");
+
+const props = defineProps<Props>();
 </script>
 
 <template>
-  <el-button type="success" @click="onBtnClick"><slot /></el-button>
+  <el-button :type="props.type" @click="onBtnClick"><slot /></el-button>
 </template>
 
 <style scoped></style>
