@@ -17,13 +17,11 @@ type Props = {
   >;
 };
 
-const onBtnClick = () => console.log("Button was clicked");
-
 const props = defineProps<Props>();
 </script>
 
 <template>
-  <el-button :type="props.type" @click="onBtnClick"><slot /></el-button>
+  <el-button :type="props.type"><slot /></el-button>
 </template>
 
 <style scoped></style>
