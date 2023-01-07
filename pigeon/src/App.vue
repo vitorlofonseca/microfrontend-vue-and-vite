@@ -3,7 +3,7 @@ import { onMounted, ref } from "vue";
 import { RouterView } from "vue-router";
 import Topbar from "./components/Topbar/Topbar.vue";
 
-import { Button, Table } from "pigeon-components-library";
+import { Button } from "pigeon-components-library";
 import "pigeon-components-library/dist/style.css";
 
 const resolutionIsTooLow = ref(false);
@@ -34,7 +34,6 @@ const onBtnClick = () => console.log("Button was clicked");
     </div>
 
     <Button type="success" @click="onBtnClick">Click here</Button>
-    <Table></Table>
   </div>
 </template>
 

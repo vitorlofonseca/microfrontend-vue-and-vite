@@ -1,5 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Home from "./views/Home/Home.vue";
+import "pigeon-components-library/dist/style.css";
+</script>
 
 <template>
-  <h2>Welcome to Pigeon Shipments</h2>
+  <Home />
 </template>
