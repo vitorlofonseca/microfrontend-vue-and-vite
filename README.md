@@ -22,14 +22,8 @@ In this project there are the following folders:
 yarn install
 ```
 
-and
-
-```sh
-yarn build
-```
-
 ## To run the project
 
 ```sh
-yarn serve
+yarn start
 ```
