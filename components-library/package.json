@@ -1,6 +1,6 @@
 {
   "name": "pigeon-components-library",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "type": "module",
   "files": [
     "dist"
@@ -21,14 +21,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/node": "^18.7.18",
+    "@vitejs/plugin-vue": "^3.1.0",
     "ag-grid-community": "^28.2.1",
     "ag-grid-vue3": "^28.2.1",
     "element-plus": "^2.2.27",
-    "vue": "^3.2.37",
-    "@types/node": "^18.7.18",
-    "@vitejs/plugin-vue": "^3.1.0",
     "typescript": "^4.6.4",
     "vite": "^3.1.0",
+    "vue": "^3.2.37",
     "vue-tsc": "^0.40.4"
   }
 }
