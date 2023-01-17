@@ -4,5 +4,7 @@ import "pigeon-components-library/dist/style.css";
 </script>
 
 <template>
-  <Home />
+  <Suspense>
+    <Home />
+  </Suspense>
 </template>

@@ -20,6 +20,7 @@ import { Table } from "pigeon-components-library";
 import { onMounted, ref } from "vue";
 
 const columnDefs = [
+  { field: "shipmentId" },
   { field: "date" },
   { field: "exporter_name" },
   { field: "buyer_name" },
@@ -85,10 +86,10 @@ const onGridReady = (params: any) => {
 
   const updateData = (data: any) => params.api.setRowData(data);
 
-  fetch(
-    "https://raw.githubusercontent.com/vitorlofonseca/microfrontend-and-third-components-vue/67bc8dda18a1e3f88542f7c0e27059c11ea0decf/pigeon-shipments/src/mocks/shipments.json"
-  )
-    .then((resp) => resp.json())
-    .then((data) => updateData(data));
+  const shipmentsData = JSON.parse(
+    window.sessionStorage.getItem("shipmentsData") ?? "[]"
+  );
+
+  updateData(shipmentsData);
 };
 </script>

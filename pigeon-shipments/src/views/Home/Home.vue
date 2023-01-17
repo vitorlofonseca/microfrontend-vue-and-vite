@@ -8,6 +8,9 @@
 
 <script lang="ts" setup>
 import ShipmentsTable from "@/components/ShipmentsTable/ShipmentsTable.vue";
+import { loadShipments } from "@/services/shipment";
+
+await loadShipments();
 </script>
 
 <style lang="scss" scoped>

@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "pigeon-components-library": "^2.0.2",
+    "uuid": "^9.0.0",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },
