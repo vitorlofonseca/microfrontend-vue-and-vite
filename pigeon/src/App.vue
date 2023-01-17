@@ -14,8 +14,6 @@ const checkIfResolutionIsLow = () =>
 onMounted(checkIfResolutionIsLow);
 
 window.addEventListener("resize", checkIfResolutionIsLow);
-
-const onBtnClick = () => console.log("Button was clicked");
 </script>
 
 <template>
@@ -32,8 +30,6 @@ const onBtnClick = () => console.log("Button was clicked");
     <div class="container">
       <RouterView />
     </div>
-
-    <Button type="success" @click="onBtnClick">Click here</Button>
   </div>
 </template>
 
