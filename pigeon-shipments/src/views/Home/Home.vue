@@ -1,11 +1,19 @@
 <template>
-  <h2>Welcome to Pigeon Shipments</h2>
+  <div class="shipmentsContainer">
+    <h2>Shipments</h2>
 
-  <ShipmentsTable />
+    <ShipmentsTable />
+  </div>
 </template>
 
 <script lang="ts" setup>
 import ShipmentsTable from "@/components/ShipmentsTable/ShipmentsTable.vue";
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.shipmentsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+</style>

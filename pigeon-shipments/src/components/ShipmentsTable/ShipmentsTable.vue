@@ -1,57 +1,94 @@
 <template>
-  <Button type="primary" @click="deselectRows">Deselect rows</Button>
-
-  <Table
-    style="height: 500px"
-    :rowData="rowData.value"
-    :columnDefs="columnDefs.value"
-    :defaultColDef="defaultColDef"
-    rowSelection="multiple"
-    animateRows="true"
-    @cell-clicked="cellWasClicked"
-    @grid-ready="onGridReady"
-  ></Table>
+  <div style="height: 100%">
+    <Table
+      style="width: 100%; height: 500px"
+      class="ag-theme-alpine"
+      :columnDefs="columnDefs"
+      @grid-ready="onGridReady"
+      :defaultColDef="defaultColDef"
+      :autoGroupColumnDef="autoGroupColumnDef"
+      :groupDisplayType="groupDisplayType"
+      :showOpenedGroup="true"
+      :animateRows="true"
+      :rowData="rowData"
+    ></Table>
+  </div>
 </template>
 
 <script lang="ts" setup>
-import { Table, Button } from "pigeon-components-library";
-import { reactive, onMounted, ref, type Ref } from "vue";
+import { Table } from "pigeon-components-library";
+import { onMounted, ref } from "vue";
 
-const gridApi: Ref<any> = ref(null); // Optional - for accessing Grid's API
+const columnDefs = [
+  { field: "date" },
+  { field: "exporter_name" },
+  { field: "buyer_name" },
+  { field: "declerant_name" },
+  { field: "destination_country" },
+  { field: "origin_country" },
+  { field: "vehicle_country" },
+  { field: "hs_code" },
+  { field: "product_description" },
+  { field: "unit" },
+  { field: "quantity" },
+  { field: "total_item_no" },
+  { field: "item_row_no" },
+  { field: "statistical_quantity" },
+  { field: "gross_weight_kg" },
+  { field: "net_weight_kg" },
+  { field: "no_of_packages" },
+  { field: "total_no_of_packages" },
+  { field: "invoice_amount" },
+  { field: "invoice_currency" },
+  { field: "unit_price" },
+  { field: "total_value_try" },
+  { field: "total_value_usd" },
+  { field: "incoterms" },
+  { field: "mode_of_transport" },
+  { field: "customs_office_name" },
+  { field: "turkey_region" },
+  { field: "port_of_loading" },
+  { field: "port_name" },
+  { field: "if_returned_goods" },
+  { field: "with_container" },
+  { field: "inspection_line_code" },
+  { field: "system_control_line" },
+  { field: "item_regime_name" },
+  { field: "control_line" },
+  { field: "chapter" },
+  { field: "heading" },
+  { field: "sub_heading" },
+  { field: "month" },
+  { field: "year" },
+];
+const gridApi = ref();
+const columnApi = ref();
+const defaultColDef = {
+  flex: 1,
+  minWidth: 150,
+  resizable: true,
+};
+const autoGroupColumnDef = ref();
+const groupDisplayType = ref();
+const rowData = null;
 
-// Obtain API from grid's onGridReady event
+onMounted(() => {
+  autoGroupColumnDef.value = {
+    minWidth: 300,
+  };
+  groupDisplayType.value = "multipleColumns";
+});
+
 const onGridReady = (params: any) => {
   gridApi.value = params.api;
-};
+  columnApi.value = params.columnApi;
 
-const rowData = reactive({ value: [] }); // Set rowData to Array of Objects, one Object per Row
+  const updateData = (data: any) => params.api.setRowData(data);
 
-// Each Column Definition results in one Column.
-const columnDefs = reactive({
-  value: [{ field: "make" }, { field: "model" }, { field: "price" }],
-});
-
-// DefaultColDef sets props common to all Columns
-const defaultColDef = {
-  sortable: true,
-  filter: true,
-  flex: 1,
-};
-
-// Example load data from sever
-onMounted(() => {
-  fetch("https://www.ag-grid.com/example-assets/row-data.json")
-    .then((result) => result.json())
-    .then((remoteRowData) => (rowData.value = remoteRowData));
-});
-
-const cellWasClicked = (event: any) => {
-  // Example of consuming Grid Event
-  console.log("cell was clicked", event);
-};
-const deselectRows = () => {
-  gridApi.value?.deselectAll();
+  fetch(
+    "https://raw.githubusercontent.com/vitorlofonseca/microfrontend-and-third-components-vue/67bc8dda18a1e3f88542f7c0e27059c11ea0decf/pigeon-shipments/src/mocks/shipments.json"
+  )
+    .then((resp) => resp.json())
+    .then((data) => updateData(data));
 };
 </script>
-
-<style lang="scss" scoped></style>

@@ -9,6 +9,10 @@ const APPLICATION_PORT = 5005;
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  build: {
+    minify: false,
+    cssCodeSplit: false,
+  },
   server: {
     port: APPLICATION_PORT,
   },
