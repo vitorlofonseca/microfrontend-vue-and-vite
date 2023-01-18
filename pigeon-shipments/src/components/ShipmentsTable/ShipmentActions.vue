@@ -1,6 +1,6 @@
 <template>
   <div class="shipmentActions">
-    <Button type="primary" @click="onClick">Open shipment</Button>
+    <Button type="primary" @click="onClick">Open tracker</Button>
   </div>
 </template>
 

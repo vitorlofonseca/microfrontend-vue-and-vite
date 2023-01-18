@@ -3,8 +3,13 @@ import { onMounted, ref } from "vue";
 import { RouterView } from "vue-router";
 import Topbar from "./components/Topbar/Topbar.vue";
 
-import { Button } from "pigeon-components-library";
 import "pigeon-components-library/dist/style.css";
+
+import { listenRemoteRoutes } from "./router/remoteRoutes";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+listenRemoteRoutes(router);
 
 const resolutionIsTooLow = ref(false);
 

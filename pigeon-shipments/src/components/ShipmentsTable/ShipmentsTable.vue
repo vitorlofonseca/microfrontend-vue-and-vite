@@ -27,6 +27,16 @@ export default {
   },
   setup() {
     const columnDefs = [
+      {
+        field: "actions",
+        headerName: "Actions",
+        cellRenderer: "ShipmentActions",
+        cellRendererParams: (params: any) => ({
+          shipmentId: params?.data?.shipmentId,
+        }),
+        menuTabs: [],
+        sortable: false,
+      },
       { field: "shipmentId" },
       { field: "date" },
       { field: "exporter_name" },
@@ -68,16 +78,6 @@ export default {
       { field: "sub_heading" },
       { field: "month" },
       { field: "year" },
-      {
-        field: "actions",
-        headerName: "Actions",
-        cellRenderer: "ShipmentActions",
-        cellRendererParams: (params: any) => ({
-          shipmentId: params?.data?.shipmentId,
-        }),
-        menuTabs: [],
-        sortable: false,
-      },
     ];
     const gridApi = ref();
     const columnApi = ref();
