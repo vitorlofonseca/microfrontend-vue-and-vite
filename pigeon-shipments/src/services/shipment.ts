@@ -7,7 +7,7 @@ export const loadShipments = async () => {
 
   let shipmentsData = await shipmentsRequest.json();
 
-  shipmentsData = shipmentsData.map((shipment) => {
+  shipmentsData = shipmentsData.map((shipment: any) => {
     shipment["shipmentId"] = uuidv4();
     return shipment;
   });

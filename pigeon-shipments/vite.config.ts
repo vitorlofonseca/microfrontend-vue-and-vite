@@ -28,7 +28,7 @@ export default defineConfig({
       exposes: {
         "./App": "./src/App.vue",
       },
-      shared: ["vue"],
+      shared: ["vue", "uuid"],
     }),
   ],
   resolve: {
