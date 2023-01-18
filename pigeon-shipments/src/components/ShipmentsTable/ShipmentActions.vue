@@ -6,12 +6,15 @@
 
 <script lang="ts" setup>
 import { Button } from "pigeon-components-library";
+import { navigateTo } from "@/routes/routes";
 
 const props = defineProps({
   params: Object,
 });
 
-const onClick = () => console.log(props.params?.data);
+const onClick = () => {
+  navigateTo(`/tracker/${props.params?.data.shipmentId}`);
+};
 </script>
 
 <style lang="scss" scoped>
