@@ -593,11 +593,6 @@
   resolved "https://registry.yarnpkg.com/@types/tough-cookie/-/tough-cookie-4.0.2.tgz#6286b4c7228d58ab7866d19716f3696e03a09397"
   integrity sha512-Q5vtl1W5ue16D+nIaW8JWebSSraJVlK+EthKn7e7UcD4KWsaSJ8BqGPXNaPghgtcn/fhvrN17Tv8ksUsQpiplw==
 
-"@types/uuid@^9.0.0":
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-9.0.0.tgz#53ef263e5239728b56096b0a869595135b7952d2"
-  integrity sha512-kr90f+ERiQtKWMz5rP32ltJ/BtULDI5RVO0uavn1HQUOwjx0R1h0rnDYNL0CepF1zL5bSY6FISAfd9tOdDhU5Q==
-
 "@types/web-bluetooth@^0.0.16":
   version "0.0.16"
   resolved "https://registry.yarnpkg.com/@types/web-bluetooth/-/web-bluetooth-0.0.16.tgz#1d12873a8e49567371f2a75fe3e7f7edca6662d8"
@@ -2763,10 +2758,10 @@ pify@^3.0.0:
   resolved "https://registry.yarnpkg.com/pify/-/pify-3.0.0.tgz#e5a4acd2c101fdf3d9a4d07f0dbc4db49dd28176"
   integrity sha512-C3FsVNH1udSEX48gGX1xfvwTWfsYWj5U+8/uK15BGzIGrKoUpghX8hWZwa/OFnakBiiVNmBvemTJR5mcy7iPcg==
 
-pigeon-components-library@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/pigeon-components-library/-/pigeon-components-library-2.0.2.tgz#df4669e82d9cfdd97011c487ce7e29f4fa5000bc"
-  integrity sha512-b5tl5WnJJ+WpKjbLcDklpVzQuxNgDUoV8nWmMS/iJ9XRe0uanAKQ1urfRG38FPrENVmcxG39Nwe7DFdt9cA6/g==
+pigeon-components-library@2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/pigeon-components-library/-/pigeon-components-library-2.0.5.tgz#0eb46e88b3d2146f1298c383f18169a667c47679"
+  integrity sha512-LHlmQyzmVO3kR6zuLTwt84oE2qpCEpXCiiHbZoMW5sJrcyZm0IFXAkM2pHzOmqQcOXzmONTARGinjL3Uqj0whQ==
   dependencies:
     "@types/node" "^18.7.18"
     "@vitejs/plugin-vue" "^3.1.0"
@@ -3286,11 +3281,6 @@ util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
-
-uuid@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-9.0.0.tgz#592f550650024a38ceb0c562f2f6aa435761efb5"
-  integrity sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==
 
 validate-npm-package-license@^3.0.1:
   version "3.0.4"

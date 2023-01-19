@@ -1,5 +1,6 @@
 [
   {
+    "shipmentId": "83c11f2a-a8a0-4bcc-bd43-59344057cfef",
     "date": "03-Feb-20",
     "exporter_name": "AKAR TRADING GIDA EMLAK TURIZM ITHALAT VE IHRACAT LIMITED SIRKETI",
     "buyer_name": "AL KAFILE AL ARABIA TRADING. CO",
@@ -42,6 +43,7 @@
     "year": "2020"
   },
   {
+    "shipmentId": "179b8dc2-84d9-44fe-97d4-a16be30ef7de",
     "date": "03-Feb-20",
     "exporter_name": "BEST TAVUKÇULUK HAYVANCILIK SANAYI VE TICARET A.S.",
     "buyer_name": "IBERDIGEST S.L.(USD)",
@@ -84,6 +86,7 @@
     "year": "2020"
   },
   {
+    "shipmentId": "86125b4a-9f4b-4223-be70-0826d2c250dd",
     "date": "05-Feb-20",
     "exporter_name": "BEYPI BEYPAZARI TARIMSAL ÜRETIM PAZARLAMA SANAYI VE TICARET ANONIM SIRKETI",
     "buyer_name": "NORIDANE FOODS A/S",
@@ -126,6 +129,7 @@
     "year": "2020"
   },
   {
+    "shipmentId": "1064b56c-2605-4456-af08-43465dc30a8c",
     "date": "06-Feb-20",
     "exporter_name": "PIZZA RESTAURANTLARI A.S.",
     "buyer_name": "AZEMAT MMC",
@@ -168,6 +172,7 @@
     "year": "2020"
   },
   {
+    "shipmentId": "961e286c-83bb-4325-b4ac-4a86790f05ce",
     "date": "07-Feb-20",
     "exporter_name": "ONUR YUMURTA VE YEM TICARET SANAYI ANONIM SIRKETI",
     "buyer_name": "PROJE SULAYMANIYAH TAZA",
@@ -210,6 +215,7 @@
     "year": "2020"
   },
   {
+    "shipmentId": "bbff7d0f-8784-497f-b551-687c02d13fd7",
     "date": "12-Feb-20",
     "exporter_name": "MISIS ET ÜRÜNLERI GIDA SANAYI VE TICARET LIMITED SIRKETI",
     "buyer_name": "HÜSEYIN HEYKEL",
@@ -252,6 +258,7 @@
     "year": "2020"
   },
   {
+    "shipmentId": "7403d0dc-9750-45d6-9371-78dc1df6aaf0",
     "date": "13-Feb-20",
     "exporter_name": "KARET GIDA SANAYI DIS TICARET LIMITED SIRKETI",
     "buyer_name": "SIMA INTERNATIONAL FOR GENERAL TRADING LTD",
@@ -294,6 +301,7 @@
     "year": "2020"
   },
   {
+    "shipmentId": "9cb49085-3a84-4277-a9d7-38e89b0fbcad",
     "date": "17-Feb-20",
     "exporter_name": "ASFA ENERJI INSAAT GIDA HAYVANCILIK PAZARLAMA ITHALAT IHRACAT SANAYI VE TICARET LTD. STI.",
     "buyer_name": "KHALID ALIBRAHIM ALISSA",
@@ -336,6 +344,7 @@
     "year": "2020"
   },
   {
+    "shipmentId": "dbfabc29-42ee-491b-9624-17a47f8121c8",
     "date": "17-Feb-20",
     "exporter_name": "KOPPERT BIYOLOJIK MÜCADELE VE POLINASYON SISTEMLERI SANAYI TICARET ANONIM SIRKETI",
     "buyer_name": "BINE ISTIKHANE KOMPLEKSI LLC.",

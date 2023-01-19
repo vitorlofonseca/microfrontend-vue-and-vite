@@ -13,7 +13,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "pigeon-components-library": "^2.0.2",
+    "pigeon-components-library": "2.0.5",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },

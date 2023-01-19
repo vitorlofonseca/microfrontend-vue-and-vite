@@ -17,9 +17,6 @@
     "pigeon-shipments",
     "pigeon-tracker"
   ],
-  "dependencies": {
-    "uuid": "^9.0.0"
-  },
   "devDependencies": {
     "@originjs/vite-plugin-federation": "1.1.12",
     "kill-port": "^2.0.1",
