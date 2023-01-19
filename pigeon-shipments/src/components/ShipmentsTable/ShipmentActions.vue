@@ -13,7 +13,10 @@ const props = defineProps({
 });
 
 const onClick = () => {
-  navigateTo(`/tracker/${props.params?.data.shipmentId}`);
+  navigateTo({
+    path: `/tracker`,
+    query: { shipmentId: props.params?.data.shipmentId },
+  });
 };
 </script>
 

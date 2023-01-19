@@ -1,5 +1,20 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from "vue";
+
+const shipmentId = ref();
+
+const getShipmentIdFromUrl = () => {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  shipmentId.value = urlParams.get("shipmentId");
+};
+
+getShipmentIdFromUrl();
+</script>
 
 <template>
-  <h2>Welcome to Pigeon Tracker</h2>
+  <div></div>
+  <h2>
+    {{ shipmentId ? `Tracking of ${shipmentId}` : `Search for a shipment` }}
+  </h2>
 </template>

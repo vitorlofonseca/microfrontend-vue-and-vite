@@ -1,4 +1,4 @@
-export const navigateTo = (path: string) => {
-  const evt = new CustomEvent("remoteNavigateTo", { detail: path });
+export const navigateTo = (route: Object) => {
+  const evt = new CustomEvent("remoteNavigateTo", { detail: route });
   document.dispatchEvent(evt);
 };
