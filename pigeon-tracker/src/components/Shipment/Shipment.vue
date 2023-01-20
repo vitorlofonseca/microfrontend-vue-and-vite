@@ -1,5 +1,5 @@
 <template>
-  <div class="shipmentContainer">
+  <div class="shipmentData">
     <ShipmentTracking />
     <ShipmentData :shipment="props.shipment" />
   </div>
@@ -16,10 +16,11 @@ const props = defineProps<{
 </script>
 
 <style lang="scss" scoped>
-.shipmentContainer {
+.shipmentData {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  gap: 82px;
   margin-top: 30px;
+  max-width: 1000px;
 }
 </style>

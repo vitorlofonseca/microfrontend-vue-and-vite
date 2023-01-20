@@ -1,7 +1,7 @@
 <template>
   <div style="height: 100%">
     <Table
-      style="width: 100%; height: 500px"
+      style="width: 100%; height: 80vh"
       class="ag-theme-alpine"
       :columnDefs="columnDefs"
       @grid-ready="onGridReady"
