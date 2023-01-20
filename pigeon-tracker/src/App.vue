@@ -12,6 +12,7 @@ const shipment = ref();
 const shipments = ref();
 
 const loadShipmentById = (id: string) => {
+  shipmentId.value = id;
   shipment.value = shipments.value.filter(
     (s: Shipment) => s.shipmentId === id
   )[0];
