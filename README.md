@@ -4,7 +4,7 @@ This is a proof of concept with Vue3, to show one of many ways to design a micro
 
 - Vue 3
 - Vite as bundle pack tool
-- vite-plugin-federation as a Module federation tool
+- [vite-plugin-federation](https://github.com/originjs/vite-plugin-federation) as a Module federation tool
 
 In this project there are the following folders:
 
