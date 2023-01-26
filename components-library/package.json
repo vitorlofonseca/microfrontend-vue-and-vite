@@ -1,12 +1,19 @@
 {
   "name": "pigeon-components-library",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "type": "module",
   "files": [
     "dist"
   ],
   "main": "./dist/pigeon-components-library.umd.cjs",
   "module": "./dist/pigeon-components-library.js",
+  "keywords": [
+    "vue3",
+    "components-library",
+    "custom",
+    "element-plus",
+    "ag-grid"
+  ],
   "types": "./dist/main.d.ts",
   "exports": {
     ".": {
