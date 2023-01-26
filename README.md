@@ -1,4 +1,4 @@
-# microfrontend-and-third-components-vue
+# microfrontend-vue-and-vite
 
 This is a proof of concept with Vue3, to show one of many ways to design a microfrontend. This was done using:
 

@@ -1,5 +1,5 @@
 {
-  "name": "microfrontend-and-third-components-vue",
+  "name": "microfrontend-vue-and-vite",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vitorlofonseca/microfrontend-and-third-components-vue.git"
+    "url": "git+https://github.com/vitorlofonseca/microfrontend-vue-and-vite.git"
   },
   "keywords": [
     "micro-frontend",
@@ -35,7 +35,7 @@
   "author": "Vitor Fonseca",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vitorlofonseca/microfrontend-and-third-components-vue/issues"
+    "url": "https://github.com/vitorlofonseca/microfrontend-vue-and-vite/issues"
   },
-  "homepage": "https://github.com/vitorlofonseca/microfrontend-and-third-components-vue#readme"
+  "homepage": "https://github.com/vitorlofonseca/microfrontend-vue-and-vite#readme"
 }

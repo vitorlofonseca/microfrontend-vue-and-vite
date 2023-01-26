@@ -4,7 +4,7 @@ export const loadShipments = async () => {
   }
 
   const shipmentsRequest = await fetch(
-    "https://raw.githubusercontent.com/vitorlofonseca/microfrontend-and-third-components-vue/main/pigeon-shipments/src/mocks/shipments.json"
+    "https://raw.githubusercontent.com/vitorlofonseca/microfrontend-vue-and-vite/main/pigeon-shipments/src/mocks/shipments.json"
   );
 
   const shipmentsData = await shipmentsRequest.json();
