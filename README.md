@@ -19,11 +19,11 @@ In this project there are the following folders:
 ## Project Setup
 
 ```sh
-yarn install
+pnpm install
 ```
 
 ## To run the project
 
 ```sh
-yarn start
+pnpm start
 ```
