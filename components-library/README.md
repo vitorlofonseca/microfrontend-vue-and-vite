@@ -9,7 +9,7 @@ The components on this library were developed reusing some technologies that alr
 To install this package, you must run the following command:
 
 ```sh
-yarn install pigeon-components-library
+pnpm install pigeon-components-library
 ```
 
 After running the install command, you must import this library styles on your App.vue, inserting this line in some point:
