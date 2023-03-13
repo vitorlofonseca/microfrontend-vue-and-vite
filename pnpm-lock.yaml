@@ -4,11 +4,11 @@ importers:
 
   .:
     specifiers:
-      '@originjs/vite-plugin-federation': 1.1.12
+      '@originjs/vite-plugin-federation': ^1.2.1
       kill-port: ^2.0.1
       npm-run-all: ^4.1.5
     devDependencies:
-      '@originjs/vite-plugin-federation': 1.1.12
+      '@originjs/vite-plugin-federation': 1.2.1
       kill-port: 2.0.1
       npm-run-all: 4.1.5
 
@@ -796,12 +796,12 @@ packages:
       fastq: 1.15.0
     dev: true
 
-  /@originjs/vite-plugin-federation/1.1.12:
-    resolution: {integrity: sha512-0Cg7mlZVKRTj1wWbOA9UmoaZqEM6Mm+JIUoY6CqRT7SQcAgJ18ezLMwjbLBuFXoBVVlypWvC6RZvpdLlV54DDA==}
+  /@originjs/vite-plugin-federation/1.2.1:
+    resolution: {integrity: sha512-bKlosfNGtQM9LjS+Wju1joVly6C1ftL18zfpzzTgiZnO+mgn55lGCjz/ogLFbBn0OhE/h0fDUm+FRKeCNCXK+A==}
     engines: {node: '>=14.0.0', pnpm: '>=7.0.1'}
     dependencies:
-      estree-walker: 1.0.1
-      magic-string: 0.25.9
+      estree-walker: 3.0.3
+      magic-string: 0.27.0
     dev: true
 
   /@playwright/test/1.30.0:
@@ -834,6 +834,10 @@ packages:
 
   /@types/chai/4.3.4:
     resolution: {integrity: sha512-KnRanxnpfpjUTqTCXslZSEdLfXExwgNxYPdiO2WGUj8+HDjFi8R3k5RVKPeSCzLjCcshCAtVO2QBbVuAV4kTnw==}
+    dev: true
+
+  /@types/estree/1.0.0:
+    resolution: {integrity: sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==}
     dev: true
 
   /@types/jsdom/20.0.1:
@@ -1013,7 +1017,7 @@ packages:
       '@babel/core': 7.20.12
       '@babel/plugin-transform-typescript': 7.20.13_@babel+core@7.20.12
       '@vue/babel-plugin-jsx': 1.1.1_@babel+core@7.20.12
-      vite: 4.1.3_hlkwzk2izwsolfmdrejei4vrty
+      vite: 4.1.3_@types+node@18.14.0
       vue: 3.2.47
     transitivePeerDependencies:
       - supports-color
@@ -1026,7 +1030,7 @@ packages:
       vite: ^3.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 3.2.5_hlkwzk2izwsolfmdrejei4vrty
+      vite: 3.2.5_@types+node@18.14.0
       vue: 3.2.47
     dev: false
 
@@ -1037,7 +1041,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.1.3_hlkwzk2izwsolfmdrejei4vrty
+      vite: 4.1.3_@types+node@18.14.0
       vue: 3.2.47
     dev: true
 
@@ -2248,12 +2252,14 @@ packages:
     engines: {node: '>=4.0'}
     dev: true
 
-  /estree-walker/1.0.1:
-    resolution: {integrity: sha512-1fMXF3YP4pZZVozF8j/ZLfvnR8NSIljt56UhbZ5PeeDmmGHpgpdwQt7ITlGvYaQukCvuBRMLEiKiYC+oeIg4cg==}
-    dev: true
-
   /estree-walker/2.0.2:
     resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
+
+  /estree-walker/3.0.3:
+    resolution: {integrity: sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g==}
+    dependencies:
+      '@types/estree': 1.0.0
+    dev: true
 
   /esutils/2.0.3:
     resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==}
@@ -2937,6 +2943,13 @@ packages:
     resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==}
     dependencies:
       sourcemap-codec: 1.4.8
+
+  /magic-string/0.27.0:
+    resolution: {integrity: sha512-8UnnX2PeRAPZuN12svgR9j7M1uWMovg/CEnIwIG0LFkXSJJe4PdfUGiTGl8V9bsBHFUtfVINcSyYxd7q+kx9fA==}
+    engines: {node: '>=12'}
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.4.14
+    dev: true
 
   /memoize-one/6.0.0:
     resolution: {integrity: sha512-rkpe71W0N0c0Xz6QD0eJETuWAJGnJ9afsl1srmwPrI+yBCkge5EycXXbYRyvL29zZVUWQCY7InPRCv3GDXuZNw==}

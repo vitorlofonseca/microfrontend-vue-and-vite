@@ -12,6 +12,7 @@ export default defineConfig({
   build: {
     minify: false,
     cssCodeSplit: false,
+    target: "esnext",
   },
   server: {
     port: APPLICATION_PORT,

@@ -13,7 +13,7 @@
   },
   "private": true,
   "devDependencies": {
-    "@originjs/vite-plugin-federation": "1.1.12",
+    "@originjs/vite-plugin-federation": "^1.2.1",
     "kill-port": "^2.0.1",
     "npm-run-all": "^4.1.5"
   },
